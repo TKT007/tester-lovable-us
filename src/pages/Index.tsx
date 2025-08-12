@@ -19,7 +19,7 @@ const Index = () => {
   };
 
  const handleComplete = () => {
-  const finalUrl = addSourceToUrl(" https://glitchy.go2cloud.org/aff_c?offer_id=1520&aff_id=1497");
+  const finalUrl = addSourceToUrl("https://rewarrdsgiant.com/aff_c?offer_id=2414&aff_id=1497");
   window.open(finalUrl, "_blank");
 };
 
