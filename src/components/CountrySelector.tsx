@@ -31,10 +31,10 @@ export const CountrySelector = ({ onCountrySelect }: CountrySelectorProps) => {
           </SelectTrigger>
           <SelectContent className="bg-card border-border">
             <SelectItem value="united-states" className="h-12">
-              United Kingdom
+              United States
             </SelectItem>
             <SelectItem value="canada" className="h-12">
-              United States
+              Canada
             </SelectItem>
           </SelectContent>
         </Select>
