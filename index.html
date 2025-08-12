@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple-progress-selector</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
+
+    <meta property="og:title" content="simple-progress-selector" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+       <script>
+// Função para capturar parâmetro da URL
+const getUrlParameter = (paramName) => {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(paramName);
+};
+
+// Função para adicionar parâmetro source a qualquer URL
+const addSourceToUrl = (baseUrl) => {
+  const sourceParam = getUrlParameter('source');
+  
+  if (sourceParam && sourceParam.trim() !== '') {
+    const separator = baseUrl.includes('?') ? '&' : '?';
+    return `${baseUrl}${separator}source=${encodeURIComponent(sourceParam)}`;
+  }
+  
+  return baseUrl;
+};
+    </script>  
+  </body>
+</html>
