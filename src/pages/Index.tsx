@@ -19,10 +19,13 @@ const Index = () => {
   };
 
 const handleComplete = () => {
+  if (typeof window !== 'undefined' && window.ttq) {
+    window.ttq.track('CompleteRegistration');
+  }
   const finalUrl = addSourceToUrl("https://fb.track-conv.shop/visit/9af8254c-4f74-4d50-b622-8160360399ea");
   window.location.href = finalUrl;
 };
-
+  
   const progress = currentStep === 0 ? 25 : currentStep === 1 ? 75 : 100;
 
   return (
