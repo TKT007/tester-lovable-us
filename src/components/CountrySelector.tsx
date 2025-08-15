@@ -34,7 +34,7 @@ export const CountrySelector = ({ onCountrySelect }: CountrySelectorProps) => {
               United States
             </SelectItem>
             <SelectItem value="canada" className="h-12">
-              Canada
+              United Kingdom
             </SelectItem>
           </SelectContent>
         </Select>
