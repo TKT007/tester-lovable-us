@@ -7,32 +7,17 @@ interface FinalStepsProps {
 
 export const FinalSteps = ({ onComplete }: FinalStepsProps) => {
   const steps = [
-    {
-      title: "Download the Tester Up app!",
-      description: "Install the app on your device to start testing games and earning rewards"
-    },
-    {
-      title: "Earn More by Testing Multiple Games", 
-      description: "The more games you test, the more money you can make from different opportunities"
-    },
-    {
-      title: "Pro tip: Make in-app purchases on the games to earn faster",
-      description: "Making purchases within the games can unlock higher earning potential and bonus rewards"
-    }
+    "Download the Tester Up app!",
+    "Earn More by Testing Multiple Games",
+    "Pro tip: Make in-app purchases on the games to earn faster"
   ];
 
-  return (
-    <div>
-      {steps.map((step, index) => (
-        <div key={index} className="step-item">
-          <div className="font-bold">{step.title}</div>
-          <div className="text-gray-600">{step.description}</div>
-        </div>
-      ))}
-      {/* Resto do seu JSX aqui... */}
-    </div>
-  );
-};
+  const descriptions = [
+    "Install the app on your device to start testing games and earning rewards",
+    "The more games you test, the more money you can make from different opportunities", 
+    "Making purchases within the games can unlock higher earning potential and bonus rewards"
+  ];
+
 
   return (
     <div className="w-full space-y-8">
