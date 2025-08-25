@@ -8,7 +8,7 @@ interface FinalStepsProps {
 export const FinalSteps = ({ onComplete }: FinalStepsProps) => {
   const steps = [
     {
-      title: "Download the Tester Up app",
+      title: "Download the Tester Up app!",
       description: "Install the app on your device to start testing games and earning rewards"
     },
     {
