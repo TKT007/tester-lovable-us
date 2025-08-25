@@ -7,15 +7,15 @@ interface FinalStepsProps {
 
 export const FinalSteps = ({ onComplete }: FinalStepsProps) => {
   const steps = [
-    "Download the Tester Up app!",
+    "Download the Tester Up app",
     "Earn More by Testing Multiple Games",
     "Pro tip: Make in-app purchases on the games to earn faster"
   ];
 
   const descriptions = [
-    "Install the app on your device to start testing games and earning rewards",
-    "The more games you test, the more money you can make from different opportunities", 
-    "Making purchases within the games can unlock higher earning potential and bonus rewards"
+    "Click the button below",
+    "Earn up to $200-$500/day", 
+    "They reimburse you for anything you spend!"
   ];
 
 
